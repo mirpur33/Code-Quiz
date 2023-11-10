@@ -8,5 +8,6 @@ let startDiv = document.getElementById("start-screen");
 startButton.onclick = beginQuiz;
 
 function beginQuiz(){
-    console.log("start button clicked, begin quiz fuction called")
+    console.log("start button clicked, begin quiz fuction called");
+   startDiv.setAttribute("class", "hide") 
 }
