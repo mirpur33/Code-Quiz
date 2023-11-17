@@ -6,6 +6,7 @@ let questionsDiv = document.getElementById("questions");
 let startButton = document.getElementById("start");
 let startDiv = document.getElementById("start-screen");
 let timeEl = document.getElementById("time");
+let questionEl = document.getElementById("question-title");
 
 startButton.onclick = beginQuiz;
 
@@ -25,5 +26,7 @@ function oneSecondclockHandler(){
 }
 
 function showNextQuestion(){
+let presentQuestion = questions[qIndex];
 
+questionEl.textContent = presentQuestion.q;
 }
