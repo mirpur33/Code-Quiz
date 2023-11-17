@@ -9,6 +9,8 @@ let timeEl = document.getElementById("time");
 let questionEl = document.getElementById("question-title");
 let choicesEl = document.getElementById("choices");
 let feedbackEl = document.getElementById("feedback");
+let endDiv = document.getElementById("end-screen");
+let finalScoreEl = document.getElementById("final-score");
 
 startButton.onclick = beginQuiz;
 
@@ -78,4 +80,10 @@ function ansChoiceClick(){
 
 function endQuiz(){
     //tbd
+    clearInterval(timer);
+
+  endDiv.removeAttribute("class");
+  finalScoreEl.textContent = timeLeft;
+  questionsDiv.setAttribute("class", "hide");
+
 }
