@@ -1,37 +1,37 @@
 let questions = [
     {
-        q: "question 1",
-        ansChoices: ["answer 1", "answer 2", "answer 3", "answer 4"],
-        answer: "answer 2"
+        q: "Javascript is an _______ language?",
+        ansChoices: ["Object Oriented", "Object Based", "Procedural", "None of the Above"],
+        answer: "Object Oriented"
     },
 
     {
-        q: "question 2",
-        ansChoices: ["answer 1", "answer 2", "answer 3", "answer 4"],
-        answer: "answer 1"
+        q: "Which of the following keywords is used to define a variable in Javascript?",
+        ansChoices: ["Var", "Let", "Both", "None of the Above"],
+        answer: "Both"
     },
 
     {
-        q: "question 3",
-        ansChoices: ["answer 1", "answer 2", "answer 3", "answer 4"],
-        answer: "answer 3"
+        q: "Which of the following methods is used to access HTML elements using Javascript?",
+        ansChoices: ["getElementbyId", "getElemensByCassName()", "Both", "None of the Above"],
+        answer: "Both"
     },
 
     {
-        q: "question 4",
-        ansChoices: ["answer 1", "answer 2", "answer 3", "answer 4"],
-        answer: "answer 4"
+        q: "Upon encountering empty statements, what does the Javascript Interpreter do?",
+        ansChoices: ["Throws an Error", "Ignores the Statement", "Gives Warning", "None of the Above"],
+        answer: "Ignores the Satement"
     },
 
     {
-        q: "question 5",
-        ansChoices: ["answer 1", "answer 2", "answer 3", "answer 4"],
-        answer: "answer 2"
+        q: "Which of the following methods can be used to display data in some form using Javascript?",
+        ansChoices: ["document.write()", "console.log()", "window.alert()", "All of the Above"],
+        answer: "All of the Above"
     },
 
     {
-        q: "question 6",
-        ansChoices: ["answer 1", "answer 2", "answer 3", "answer 4"],
-        answer: "answer 3"
+        q: "How can a datatype be declared to be a constant type?",
+        ansChoices: ["const", "var", "let", "constant"],
+        answer: "const"
     }
 ];
