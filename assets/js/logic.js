@@ -7,6 +7,7 @@ let startButton = document.getElementById("start");
 let startDiv = document.getElementById("start-screen");
 let timeEl = document.getElementById("time");
 let questionEl = document.getElementById("question-title");
+let choicesEl = document.getElementById("choices");
 
 startButton.onclick = beginQuiz;
 
@@ -29,4 +30,23 @@ function showNextQuestion(){
 let presentQuestion = questions[qIndex];
 
 questionEl.textContent = presentQuestion.q;
+
+choicesEl.innerHTML = "";
+
+presentQuestion.ansChoices.forEach(function(option, i) {
+    let btn = document.createElement("button");
+    btn.setAttribute("value", option);
+    btn.setAttribute("class", "choice");
+
+    btn.textContent = i + 1 + ". " + option;
+
+    btn.onclick = ansChoiceClick;
+
+    choicesEl.appendChild(btn);
+    
+})
+}
+
+function ansChoiceClick(){
+    
 }
